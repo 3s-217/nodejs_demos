@@ -118,7 +118,7 @@ class fsio extends events {
                     at[0]?.ev == "change" && at[0].file == c.file &&
                         at.shift();
                 }
-                else at.shift(0, at[1]?.ev == "change" &&
+                else at.splice(0, at[1]?.ev == "change" &&
                     at[0].file == c.file ? 2 : 1);
             }
             else if (c.file == nm) {
