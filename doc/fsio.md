@@ -82,9 +82,9 @@ class fsio extends events {
     }
     #per() {
         let t = this, n = t.nm, z = t.cf.fl,
-            f = () => wfs(z, JSON.stringify({ [t.day]: { [t.dir]: { [n]: t.len } } }));
+            f = () => wfs(z, json({ [t.day]: { [t.dir]: { [n]: t.len } } }));
         if (existsSync(z)) {
-            var a = JSON.parse(rfs(z, { encoding: "utf8" })), b;
+            var a = json(rfs(z, { encoding: "utf8" })), b;
             a ? (b = a[t.tday]?.[t.dir]) && b[n] > -1 &&
                 (t.#len = b[n])
                 : f();
