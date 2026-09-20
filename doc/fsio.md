@@ -73,7 +73,7 @@ class fsio extends events {
     #nDay() {
         let t = this, td = t.day;
         if (t.tday != td) {
-            t.tday = td; t.len = 0; t.sz = 0;
+            t.tday = td; t.#len = 0; t.sz = 0;
             stat(path.join(t.dir, t.nm), (e, d) => {
                 t.#persist(d.size > 10000 && {});
                 log('new Day');
