@@ -32,7 +32,7 @@ function mockDB(data = []) {
 
 ### Main script
 
-The ***json*** method is implemented directly within the ***__o*** class as a static function. You can find its definition in the [github.com/3s217/coreWeb-js](https://github.com/3s217/coreWeb-js)
+The ***json*** method is implemented directly within the ***__o*** class as a static function. You can find its definition in the [github.com/3s217/coreWeb-js](https://github.com/3s-217/coreWeb-js)
 repository.
 
 ```js
